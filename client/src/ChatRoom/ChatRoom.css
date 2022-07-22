@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 20px;
+}
+.whiteboard {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 300px;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: 5px solid rgba(23, 242, 71, 0.336);
+  cursor: pointer;
+}
+
+.whiteboard.inactive {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.whiteboard.inactive {
+  cursor: not-allowed;
+  pointer-events: none;
+  border: 5px solid rgba(255, 85, 0, 0.919);
+}
+
+.colors {
+  position: fixed;
+  top: 5px;
+  left: 305px;
+  cursor: pointer;
+}
+.color {
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+}
+
+.color.black {
+  background-color: black;
+}
+.color.red {
+  background-color: red;
+}
+.color.green {
+  background-color: green;
+}
+.color.blue {
+  background-color: blue;
+}
+.color.yellow {
+  background-color: yellow;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+.overlay > button {
+  font-size: 50px;
+  padding: 25px;
+  cursor: pointer;
+}
+
+.left {
+  width: 300px;
+  flex-direction: column;
+  display: flex;
+  padding: 20px;
+}
+
+.good_solution {
+  padding: 10px 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.send_solution {
+  padding: 8px 10px;
+  font-size: 18px;
+}
+
+.suggestions {
+  color: rgb(9, 89, 109);
+  font-size: 17px;
+}
